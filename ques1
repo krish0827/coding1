@@ -1,0 +1,7 @@
+trade=[20,30,10,12,80,125,60,85]
+cp=trade[ : :2]
+sp=trade[1: :2]
+a=sum(cp)
+b=sum(sp)
+profit=b - a
+print(profit)
