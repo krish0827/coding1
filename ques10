@@ -12,3 +12,13 @@ def main():
   print(l)
 if __name__=="__main__":
   main()
+
+Largest of number- List comprehension
+
+def main():
+  n=int(input())
+  s=max([int(ch) for ch in str(n)])  #List comprehension
+ 
+  print(s)
+if __name__=="__main__":
+  main()
