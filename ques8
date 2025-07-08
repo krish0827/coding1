@@ -1,0 +1,15 @@
+#SUM oF NUMBER
+
+def main():
+  n=int(input())
+  s=str(n)
+  sum=0
+  for ch in s:
+    sum=sum+int(ch)
+  print(sum)
+
+if __name__=="__main__":
+  main()
+
+
+
