@@ -1,0 +1,11 @@
+#print ABCDEF
+
+
+def main():
+  for i in range(6):
+    print(chr(i+65),end=" ") #return the string
+  
+if __name__=="__main__":
+  main()
+  
+  
