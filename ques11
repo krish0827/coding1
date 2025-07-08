@@ -1,0 +1,22 @@
+#REVERSE
+
+def main():
+  n=int(input())
+  r=int(str(n)[ : :-1])
+  print(r)
+if __name__=="__main__":
+  main()
+
+#REVERSE(ordinary)
+
+def main():
+  n=int(input())
+  r=0
+  while n>0:
+    d=n%10
+    r=r*10+d
+    n=n//10
+  
+  print(r)
+if __name__=="__main__":
+  main()
