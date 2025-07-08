@@ -1,0 +1,13 @@
+#ARMSTRONG
+
+
+def main():
+  n=int(input())
+  count=len(str(n))
+  total=sum([int(ch)**count for ch in str(n)])
+  result={True:"Armstrog",False:"Not Armstrong"}
+  print(result[total==n])
+  
+  
+if __name__=="__main__":
+  main()
