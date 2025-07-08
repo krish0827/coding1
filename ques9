@@ -1,0 +1,7 @@
+def main():
+  n=int(input())
+  s=[int(ch) for ch in str(n)]  #List comprehension
+ 
+  print(s)
+if __name__=="__main__":
+  main()
