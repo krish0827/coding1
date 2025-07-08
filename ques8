@@ -11,5 +11,13 @@ def main():
 if __name__=="__main__":
   main()
 
+#sum using List comprehension
 
 
+def main():
+  n=int(input())
+  s=sum([int(ch) for ch in str(n)])  #List comprehension
+ 
+  print(s)
+if __name__=="__main__":
+  main()
