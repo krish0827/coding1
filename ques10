@@ -1,0 +1,14 @@
+Largest of number
+
+
+def main():
+  n=int(input())
+  l=0
+  while n>0:
+    d=n%10
+    if d>l:
+      l=d
+    n=n//10
+  print(l)
+if __name__=="__main__":
+  main()
