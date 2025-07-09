@@ -1,0 +1,12 @@
+import re
+def main():
+  s=input()
+  s=s.strip()#strip-Remove spaces at the beginning and at the end of the string:
+  words=re.split("\\s+",s)
+  wordCount=len(words)
+  print(wordCount)
+  
+  
+  
+if __name__=='__main__':
+  main()
