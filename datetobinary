@@ -1,0 +1,30 @@
+You are given a string date representing a Gregorian calendar date in the yyyy-mm-dd format.
+date can be written in its binary representation obtained by converting year, month, and day to their binary representations without any leading zeroes and writing them down in year-month-day format.
+Return the binary representation of date.
+        
+class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        ans=[ ]
+        a=date.split('-')
+        for ch in a:
+            ab=int(ch)
+            r=bin(ab)          #convert to binary
+            d=r[2:]            # remove 0b from r
+            ans.append(d)
+        s='-'.join(ans)        #convert list to string or we can join string element
+        return s
+
+OR 
+
+    class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        y,m,d=date.split('-')
+        y=bin(int(y))
+        m=bin(int(m))
+        d=bin(int(d))
+        year=y[2:]
+        month=m[2:]
+        day=d[2:]
+        return f"{year}-{month}-{day}"
+            
+        
