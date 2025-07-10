@@ -1,0 +1,44 @@
+Given a string s, calculate its reverse degree.
+The reverse degree is calculated as follows:
+For each character, multiply its position in the reversed alphabet ('a' = 26, 'b' = 25, ..., 'z' = 1) with its position in the string (1-indexed).
+Sum these products for all characters in the string.
+Return the reverse degree of s.
+
+
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        total=0
+        rp={}
+        p1=0
+        p2=0
+        ascii=97
+        value=26
+        for _ in range(26):
+            rp[chr(ascii)]=value
+            ascii+=1
+            value-=1
+        for i,ch in enumerate(s,start=1):
+                p1=rp[ch]
+                p2=i
+                total+=p1*p2
+        return total
+
+        OR
+        
+
+        total=0
+        for i,ch in enumerate(s,start=1):
+
+            p1=123-ord(ch)     #ord-get ascci avlue
+            p2=i
+            total+=p1*p2
+        return total
+            
+        
+
+
+
+
+
+        #rp={chr(i+97):26-i for i in range(26)}      dict comprehension 
+        
