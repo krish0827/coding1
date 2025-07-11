@@ -1,0 +1,15 @@
+FIBONACCI
+
+def fibI(n):
+  a,b=0,1
+  for _ in range(n):
+    a,b=b,a+b
+  return a
+
+OR
+  
+def fibII(n):
+  if n==0 or n==1: #or if n in(0,1)
+    return n
+  else:
+    return fibII(n-1)+ fibII(n-2)
